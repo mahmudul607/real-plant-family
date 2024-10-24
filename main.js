@@ -33,3 +33,32 @@ document.addEventListener("DOMContentLoaded", ()=>{
        
     })
 
+
+    // video modal function 
+
+    document.addEventListener("DOMContentLoaded", function() {
+        let vModal = document.getElementById('videoModal');
+        let vBtn = document.getElementById('vModalBtn');
+        let closeBtn = document.getElementsByClassName('closevModal')[0];
+        let iframe = document.querySelector('iframe');
+    
+        vBtn.onclick = function() {
+            vModal.style.display = 'block';
+            console.log('Open Modal');
+            iframe.src = iframe.src;
+        };
+    
+        closeBtn.onclick = function() {
+            vModal.style.display = 'none';
+            iframe.src = '';
+        };
+    
+        window.onclick = function(e) {
+            if (e.target == vModal) {
+                vModal.style.display = 'none';
+                iframe.src = '';
+            }
+        };
+    });
+    
+

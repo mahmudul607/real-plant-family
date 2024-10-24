@@ -2,6 +2,28 @@
   box-sizing: content-box;
 }
 
+
+header .navbar{
+  background: rgba(241, 155, 202, 0.8);
+  top: 10px;
+  
+  
+}
+
+header {
+  position: sticky !important;
+  top: -10px;
+  z-index: 1000;
+  
+}
+
+.main_section_carousel{
+  position: relative;
+  height: 600px;
+  top: 0px;
+}
+
+
 .dropdown .dropdown_content {
   position: absolute;
   display: none;
@@ -34,14 +56,17 @@
 .card_carousel .carousel-control-next,
 .carousel-control-prev {
   position: absolute !important;
-
-  width: 50px !important;
-  height: 50px !important;
+ 
+  width: 40px !important;
+  height: 40px !important;
   top: 80% !important;
   border: 2px solid #ccc !important;
 
   border-radius: 50px !important;
 
+}
+.card_carousel .carousel-control-prev-icon, .carousel-control-next-icon{
+  background-size: 18px !important;
 }
 
 .card_carousel .carousel-caption {
@@ -73,6 +98,23 @@ transition: border-radius 0.3s ease-in-out ;
 font-family: "Arima";
 
 }
+.card_container .card .card_image{
+  overflow: hidden;
+}
+
+.card_container .card .card_image img{
+ 
+  transition: transform 0.5s;
+ 
+}
+
+
+
+.card_container .card .card_image:hover img{
+    transform: scale(1.2);
+  
+}
+
 
 
 
@@ -81,6 +123,36 @@ font-family: "Arima";
   transition: 1s ease-in;
   bottom: 5px;
   animation: bottomPositionCartButton 0.5s ease-in-out;
+}
+
+
+/* vidoe style  */
+
+
+ .vModal{
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: 10%;
+  right: 0;
+  width: 80%;
+  height: 60%;
+  overflow: auto;
+  background-color: red;
+}
+
+ 
+
+ .closevModal{
+  float: right;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #aaaa;
+}
+ .closevModal:hover, .closevModal:focus{
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 

@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Real Plant Family</title>
 
@@ -28,10 +28,10 @@
 </head>
 
 <body>
-    <div>
-        <section>
-            <div class="navbar flex flex justify-between gap-2 sm:px-4 px-1  opacity-100  bg-cyan-500">
-                <div class="nav-area-1  lg:w-48 md:32 sm:w-16 w-8 ">
+    <div class="relative">
+        <header >
+            <div class="navbar flex flex justify-between gap-2 sm:px-4 mx-6  rounded-4 font-bold h-[100px]  ">
+                <div class="nav-area-1 flex flex-end  lg:w-48 md:32 sm:w-16 w-8 ">
                     <img class="w-24 " src="./images/all.png" alt="" />
                 </div>
                 <div class="nav-area-2  grow items-center   flex">
@@ -72,28 +72,26 @@
 
                 </div>
                 <div class="nav-area-3 lg:w-96 md:48 w-32   flex justify-end sm:pr-4">
-                    <ul class="flex max-sm:gap-1 min-sm:gap-2 md:gap-6 lg:gap-8 ">
+                    <ul class="flex max-sm:gap-1  min-sm:gap-2 md:gap-6 lg:gap-8 ">
 
-                        <li class="hover:text-white cursor-pointer"><i class="bi bi-search"></i></li>
-                        <li class="hover:text-white cursor-pointer"><i class="bi bi-person-fill"></i></li>
-                        <li class="hover:text-white cursor-pointer"><i class="bi bi-heart"></i></li>
-                        <li class="hover:text-white cursor-pointer"><i class="bi bi-cart-check"></i></li>
+                        <li class="hover:text-white cursor-pointer md:text-2xl"><i class="bi bi-search "></i></li>
+                        <li class="hover:text-white cursor-pointer md:text-2xl"><i class="bi bi-person-fill"></i></li>
+                        <li class="hover:text-white cursor-pointer md:text-2xl"><i class="bi bi-heart"></i></li>
+                        <li class="hover:text-white cursor-pointer md:text-2xl"><i class="bi bi-cart-check"></i></li>
 
                     </ul>
 
                 </div>
             </div>
-        </section>
-        <section>
-            <div class="main_section_carousel">
-                <div class="owl-carousel " data-aos="fade-up" data-aos-delay="300">
+        </header>
+            <div class="main_section_carousel absolute h-[600px] top-0 w-full">
+                <div class="owl-carousel  h-screen " data-aos="fade-up" data-aos-delay="300">
                     <div class="item w-full  h-screen relative">
                         <div class="img w-full h-screen relative">
                             <img src="./images/plant/6.webp" class="w-full h-full" alt="">
 
                         </div>
-                        <div data-aos="fade-up" data-aos-delay="500"
-                            class="absolute top-32   items-center flex text-center h-72 font-extrabold  w-full z-100 text-white ">
+                        <div data-aos="fade-up" data-aos-delay="500" class="absolute top-32   items-center flex text-center h-72 font-extrabold  w-full z-100 text-white ">
 
                             <div class="relative z-100 mx-auto">
                                 <h1 class="text-3xl pb-4">Welcome to planet family</h1>
@@ -174,267 +172,291 @@
 
                 </div>
             </div>
-        </section>
+        
 
         <!-- card with carousel -->
+            <div class="top-[500px] relative">
 
-        <div class="card_with_carousel">
-            <div class="category_plant p-8 h-[200px] ">
-                <div class="h-full grid grid-cols-8 align-content-center text-center text-xl font-bold ">
-                    <div class=" cat_items  h-full col-span-8 p-4 md:col-span-2 sm:col-span-4">Home Plant</div>
-                    <div class="cat_items col-span-8 p-4 md:col-span-2 sm:col-span-4">Office Plant</div>
-                    <div class="cat_items col-span-8 p-4 md:col-span-2 sm:col-span-4">Inside Plant</div>
-                    <div class="cat_items col-span-8 p-4 md:col-span-2 sm:col-span-4">OutSide Plant</div>
+                <div class="card_with_carousel ">
+                    <div class="category_plant p-8 h-[200px] ">
+                        <div class="h-full grid grid-cols-8 align-content-center text-center text-xl font-bold ">
+                            <div class=" cat_items  h-full col-span-8 p-4 md:col-span-2 sm:col-span-4">Home Plant</div>
+                            <div class="cat_items col-span-8 p-4 md:col-span-2 sm:col-span-4">Office Plant</div>
+                            <div class="cat_items col-span-8 p-4 md:col-span-2 sm:col-span-4">Inside Plant</div>
+                            <div class="cat_items col-span-8 p-4 md:col-span-2 sm:col-span-4">OutSide Plant</div>
+                        </div>
+                    </div>
+            
+                    <!-- card_carousel -->
+                    <div class="card_carousel h-[500px]">
+            
+                        <div id="carouselExampleDark" class="carousel h-full carousel-dark slide">
+                            
+                            <div class="carousel-inner relative h-full w-100 bg-slate-400">
+                              <div class="carousel-item h-full w-full active " data-bs-interval="10000">
+                                <div class="flex p-6 h-full w-[80%] flex-row-reverse overflow-hidden mx-auto">
+                                    <div data-aos="fade-left"  class="w-[40%] lg:h-[60%] h-[40%] my-auto lg:p-16 p-4 rounded-4 bg-white right-0 ">
+                                        <img src="./images/plant/4.jfif" class=" w-full h-full " alt="...">
+                                    </div>
+                                    <div data-aos="fade-left" class="carousel-caption h-full w-[60%] ">
+                                      <div class="flex flex-column h-full w-full justify-content-center ">
+                                        <h5>First slide label</h5>
+                                      <p>Some representative placeholder content for the first slide.</p>
+                                      </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item h-full w-full active " data-bs-interval="20000">
+                                <div class="flex p-6 h-full w-[80%] flex-row-reverse overflow-hidden mx-auto">
+                                    <div data-aos="fade-left"  class="w-[40%] lg:h-[60%] h-[40%] my-auto lg:p-16 p-4 rounded-4 bg-white right-0 ">
+                                        <img src="./images/plant/3.jpg" class=" w-full h-full " alt="...">
+                                    </div>
+                                    <div data-aos="fade-left" class="carousel-caption h-full w-[60%] ">
+                                      <div class="flex flex-column h-full w-full justify-content-center ">
+                                        <h5>First slide label</h5>
+                                      <p>Some representative placeholder content for the first slide.</p>
+                                      </div>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="carousel-item h-full w-full active " data-bs-interval="30000">
+                                <div class="flex p-6 h-full w-[80%] flex-row-reverse overflow-hidden mx-auto">
+                                    <div data-aos="fade-left"  class="w-[40%] lg:h-[60%] h-[40%] my-auto lg:p-16 p-4 rounded-4 bg-white right-0 ">
+                                        <img src="./images/plant/2.jfif" class=" w-full h-full " alt="...">
+                                    </div>
+                                    <div data-aos="fade-left" class="carousel-caption h-full w-[60%] ">
+                                      <div class="flex flex-column h-full w-full justify-content-center ">
+                                        <h5>First slide label</h5>
+                                      <p>Some representative placeholder content for the first slide.</p>
+                                      </div>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+            
+                    </div>
+            
                 </div>
-            </div>
-
-            <!-- card_carousel -->
-            <div class="card_carousel h-[500px]">
-
-                <div id="carouselExampleDark" class="carousel h-full carousel-dark slide">
-                    
-                    <div class="carousel-inner relative h-full w-100 bg-slate-400">
-                      <div class="carousel-item h-full w-full active " data-bs-interval="10000">
-                        <div class="flex p-6 h-full w-[80%] flex-row-reverse overflow-hidden mx-auto">
-                            <div data-aos="fade-left"  class="w-[40%] h-[70%] my-auto p-16 rounded-4 bg-white right-0 ">
-                                <img src="./images/plant/4.jfif" class=" w-full h-full px-8" alt="...">
+                    <!-- Product cards -->
+            
+                    <div class="featured_products ">
+                        <h1 class="text-4xl font-bold pl-8 py-6 header_feature_product">Featured Products</h1>
+            
+                        <div class="card_container px-6">
+            
+                            <div class="grid grid-cols-12 gap-2 ">
+                                <div class=" lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 p-4 h-[400px]">
+                                    <div class="bg-cyan-100 rounded-t-2xl card h-full  ">
+                                        <div class="card_image    relative h-[70%]">
+                                            <div class="img h-full ">
+                                                <img class="w-full h-full rounded-t-2xl rounded-b-3xl" src="./images/plant/2.jfif" alt="">
+                                            </div>
+                                            <div class="card_button pl-6 sm:pl-4 lg:pl-10 hidden  absolute">
+                                                <ul class="flex gap-2">
+                                                    <li class="bg-white rounded cursor-pointer" title="Add to Cart"><div class="bi bi-cart text-black p-2 "></div></li>
+                                                    <li class="bg-white rounded cursor-pointer" title="Add to Wish List"><div class="bi bi-heart text-black p-2 "></div></li>
+                                                    <li class="bg-white rounded cursor-pointer" title="Compare With"><div class="bi bi-file-diff text-black p-2 "></div></li>
+                                                    <li class="bg-white rounded cursor-pointer" title="Quick View"><div class="bi bi-eye-fill text-black p-2 "></div></li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="cart_details px-2 py-6 h-[30%]">
+                                            <h3>Name Of Products</h3>
+                                            <p>$50.00</p>
+                                            <div class="py-2 flex gap-4">
+                                                <div class="rounded-full cursor-pointer   w-4 h-4 bg-green-600"></div>
+                                                <div class="rounded-full cursor-pointer  w-4 h-4 bg-red-600"></div>
+                                                <div class="rounded-full cursor-pointer w-4 h-4 bg-yellow-600"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 p-4 h-[400px]">
+                                    <div class="card h-full bg-cyan-100 rounded-t-2xl">
+                                        <div class="card_image  relative h-[70%]">
+                                            <div class="img h-full">
+                                                <img class="w-full h-full rounded-t-2xl rounded-b-3xl" src="./images/plant/4.jfif" alt="">
+                                            </div>
+                                            <div class="card_button pl-6 sm:pl-4 lg:pl-10 hidden  absolute">
+                                                <ul class="flex gap-2">
+                                                    <li class="bg-white rounded cursor-pointer" title="Add to Cart"><div class="bi bi-cart text-black p-2 "></div></li>
+                                                    <li class="bg-white rounded cursor-pointer" title="Add to Wish List"><div class="bi bi-heart text-black p-2 "></div></li>
+                                                    <li class="bg-white rounded cursor-pointer" title="Compare With"><div class="bi bi-file-diff text-black p-2 "></div></li>
+                                                    <li class="bg-white rounded cursor-pointer" title="Quick View"><div class="bi bi-eye-fill text-black p-2 "></div></li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="cart_details px-2 py-6 h-[30%]">
+                                            <h3>Name Of Products</h3>
+                                            <p>$50.00</p>
+                                            <div class="py-2 flex gap-4">
+                                                <div class="rounded-full cursor-pointer   w-4 h-4 bg-green-600"></div>
+                                                <div class="rounded-full cursor-pointer  w-4 h-4 bg-red-600"></div>
+                                                <div class="rounded-full cursor-pointer w-4 h-4 bg-yellow-600"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 p-4 h-[400px]">
+                                    <div class="card h-full bg-cyan-100 rounded-t-2xl">
+                                        <div class="card_image  relative h-[70%]">
+                                            <div class="img h-full">
+                                                <img class="w-full h-full rounded-t-2xl rounded-b-3xl" src="./images/plant/5.jfif" alt="">
+                                            </div>
+                                            <div class="card_button pl-6 sm:pl-4 lg:pl-10 hidden  absolute">
+                                                <ul class="flex gap-2">
+                                                    <li class="bg-white rounded cursor-pointer" title="Add to Cart"><div class="bi bi-cart text-black p-2 "></div></li>
+                                                    <li class="bg-white rounded cursor-pointer" title="Add to Wish List"><div class="bi bi-heart text-black p-2 "></div></li>
+                                                    <li class="bg-white rounded cursor-pointer" title="Compare With"><div class="bi bi-file-diff text-black p-2 "></div></li>
+                                                    <li class="bg-white rounded cursor-pointer" title="Quick View"><div class="bi bi-eye-fill text-black p-2 "></div></li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="cart_details px-2 py-6 h-[30%]">
+                                            <h3>Name Of Products</h3>
+                                            <p>$50.00</p>
+                                            <div class="py-2 flex gap-4">
+                                                <div class="rounded-full cursor-pointer   w-4 h-4 bg-green-600"></div>
+                                                <div class="rounded-full cursor-pointer  w-4 h-4 bg-red-600"></div>
+                                                <div class="rounded-full cursor-pointer w-4 h-4 bg-yellow-600"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 p-4 h-[400px]">
+                                    <div class="card h-full bg-cyan-100 rounded-t-2xl">
+                                        <div class="card_image  relative h-[70%]">
+                                            <div class="img h-full">
+                                                <img class="w-full h-full rounded-t-2xl rounded-b-3xl" src="./images/plant/1.jpg" alt="">
+                                            </div>
+                                            <div class="card_button pl-6 sm:pl-4 lg:pl-10 hidden  absolute">
+                                                <ul class="flex gap-2">
+                                                    <li class="bg-white rounded cursor-pointer" title="Add to Cart"><div class="bi bi-cart text-black p-2 "></div></li>
+                                                    <li class="bg-white rounded cursor-pointer" title="Add to Wish List"><div class="bi bi-heart text-black p-2 "></div></li>
+                                                    <li class="bg-white rounded cursor-pointer" title="Compare With"><div class="bi bi-file-diff text-black p-2 "></div></li>
+                                                    <li class="bg-white rounded cursor-pointer" title="Quick View"><div class="bi bi-eye-fill text-black p-2 "></div></li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="cart_details px-2 py-6 h-[30%]">
+                                            <h3>Name Of Products</h3>
+                                            <p>$50.00</p>
+                                            <div class="py-2 flex gap-4">
+                                                <div class="rounded-full cursor-pointer   w-4 h-4 bg-green-600"></div>
+                                                <div class="rounded-full cursor-pointer  w-4 h-4 bg-red-600"></div>
+                                                <div class="rounded-full cursor-pointer w-4 h-4 bg-yellow-600"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 p-4 h-[400px]">
+                                    <div class="card h-full bg-cyan-100 rounded-t-2xl">
+                                        <div class="card_image  relative h-[70%]">
+                                            <div class="img h-full">
+                                                <img class="w-full h-full rounded-t-2xl rounded-b-3xl" src="./images/plant/6.webp" alt="">
+                                            </div>
+                                            <div class="card_button pl-6 sm:pl-4 lg:pl-10 hidden  absolute">
+                                                <ul class="flex gap-2">
+                                                    <li class="bg-white rounded cursor-pointer" title="Add to Cart"><div class="bi bi-cart text-black p-2 "></div></li>
+                                                    <li class="bg-white rounded cursor-pointer" title="Add to Wish List"><div class="bi bi-heart text-black p-2 "></div></li>
+                                                    <li class="bg-white rounded cursor-pointer" title="Compare With"><div class="bi bi-file-diff text-black p-2 "></div></li>
+                                                    <li class="bg-white rounded cursor-pointer" title="Quick View"><div class="bi bi-eye-fill text-black p-2 "></div></li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="cart_details px-2 py-6 h-[30%]">
+                                            <h3>Name Of Products</h3>
+                                            <p>$50.00</p>
+                                            <div class="py-2 flex gap-4">
+                                                <div class="rounded-full cursor-pointer   w-4 h-4 bg-green-600"></div>
+                                                <div class="rounded-full cursor-pointer  w-4 h-4 bg-red-600"></div>
+                                                <div class="rounded-full cursor-pointer w-4 h-4 bg-yellow-600"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 p-4 h-[400px]">
+                                    <div class="card h-full bg-cyan-100 rounded-t-2xl">
+                                        <div class="card_image  relative h-[70%]">
+                                            <div class="img h-full">
+                                                <img class="w-full h-full rounded-t-2xl rounded-b-3xl" src="./images/plant/2.jfif" alt="">
+                                            </div>
+                                            <div class="card_button pl-6 sm:pl-4 lg:pl-10 hidden  absolute">
+                                                <ul class="flex gap-2">
+                                                    <li class="bg-white rounded cursor-pointer" title="Add to Cart"><div class="bi bi-cart text-black p-2 "></div></li>
+                                                    <li class="bg-white rounded cursor-pointer" title="Add to Wish List"><div class="bi bi-heart text-black p-2 "></div></li>
+                                                    <li class="bg-white rounded cursor-pointer" title="Compare With"><div class="bi bi-file-diff text-black p-2 "></div></li>
+                                                    <li class="bg-white rounded cursor-pointer" title="Quick View"><div class="bi bi-eye-fill text-black p-2 "></div></li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="cart_details px-2 py-6 h-[30%]">
+                                            <h3>Name Of Products</h3>
+                                            <p>$50.00</p>
+                                            <div class="py-2 flex gap-4">
+                                                <div class="rounded-full cursor-pointer   w-4 h-4 bg-green-600"></div>
+                                                <div class="rounded-full cursor-pointer  w-4 h-4 bg-red-600"></div>
+                                                <div class="rounded-full cursor-pointer w-4 h-4 bg-yellow-600"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                
                             </div>
-                            <div data-aos="fade-left" class="carousel-caption h-full w-[60%] ">
-                              <div class="flex flex-column h-full w-full justify-content-center ">
-                                <h5>First slide label</h5>
-                              <p>Some representative placeholder content for the first slide.</p>
-                              </div>
-                            </div>
+            
                         </div>
-                      </div>
-                      <div class="carousel-item h-full w-full active " data-bs-interval="20000">
-                        <div class="flex p-6 h-full w-[80%] flex-row-reverse overflow-hidden mx-auto">
-                            <div data-aos="fade-left"  class="w-[40%] h-[70%] my-auto p-16 rounded-4 bg-white right-0 ">
-                                <img src="./images/plant/3.jpg" class=" w-full h-full px-8" alt="...">
-                            </div>
-                            <div data-aos="fade-left" class="carousel-caption h-full w-[60%] ">
-                              <div class="flex flex-column h-full w-full justify-content-center ">
-                                <h5>First slide label</h5>
-                              <p>Some representative placeholder content for the first slide.</p>
-                              </div>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="carousel-item h-full w-full active " data-bs-interval="30000">
-                        <div class="flex p-6 h-full w-[80%] flex-row-reverse overflow-hidden mx-auto">
-                            <div data-aos="fade-left"  class="w-[40%] h-[70%] my-auto p-16 rounded-4 bg-white right-0 ">
-                                <img src="./images/plant/2.jfif" class=" w-full h-full px-8" alt="...">
-                            </div>
-                            <div data-aos="fade-left" class="carousel-caption h-full w-[60%] ">
-                              <div class="flex flex-column h-full w-full justify-content-center ">
-                                <h5>First slide label</h5>
-                              <p>Some representative placeholder content for the first slide.</p>
-                              </div>
-                            </div>
-                        </div>
-                      </div>
+            
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
-                  </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- Product cards -->
-
-        <div class="featured_products ">
-            <h1 class="text-4xl font-bold pl-8 py-6 header_feature_product">Featured Products</h1>
-
-            <div class="card_container px-6">
-
-                <div class="grid grid-cols-12 gap-2 ">
-                    <div class="lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 p-4 h-[400px]">
-                        <div class="card h-full rounded-5">
-                            <div class="card_image  relative h-[70%]">
-                                <div class="img h-full">
-                                    <img class="h-full rounded-5" src="./images/plant/2.jfif" alt="">
-                                </div>
-                                <div class="card_button sm:pl-4 lg:pl-10 hidden  absolute">
-                                    <ul class="flex gap-2">
-                                        <li class="bg-white rounded cursor-pointer" title="Add to Cart"><div class="bi bi-cart text-black p-2 "></div></li>
-                                        <li class="bg-white rounded cursor-pointer" title="Add to Wish List"><div class="bi bi-heart text-black p-2 "></div></li>
-                                        <li class="bg-white rounded cursor-pointer" title="Compare With"><div class="bi bi-file-diff text-black p-2 "></div></li>
-                                        <li class="bg-white rounded cursor-pointer" title="Quick View"><div class="bi bi-eye-fill text-black p-2 "></div></li>
-                                        
-                                    </ul>
-                                </div>
+                    <!-- Green House video section -->
+            
+                    <div class="green-house-video-section p-4 ">
+                        <div class="video-container sm:flex sm:flex-column  text-center gap-2">
+                            <div class="video-area h-[400px] sm:w-[50%] p-4"> 
+                               <span class="w-full h-full p-8">
+                                <button id="vModalBtn" ><i class="bi bi-play"></i></button>
+                               </span>
+                               
+                             
                             </div>
-                            <div class="cart_details px-2 py-6 h-[30%]">
-                                <h3>Name Of Products</h3>
-                                <p>$50.00</p>
-                                <div class="py-2 flex gap-4">
-                                    <div class="rounded-full cursor-pointer   w-4 h-4 bg-green-600"></div>
-                                    <div class="rounded-full cursor-pointer  w-4 h-4 bg-red-600"></div>
-                                    <div class="rounded-full cursor-pointer w-4 h-4 bg-yellow-600"></div>
-                                </div>
-                            </div>
+                            <div class="video-details sm:w-[50%] w-full">video details</div>
                         </div>
+
+                        
+            
                     </div>
-                    <div class="lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 p-4 h-[400px]">
-                        <div class="card h-full rounded-5">
-                            <div class="card_image  relative h-[70%]">
-                                <div class="img h-full">
-                                    <img class="h-full rounded-5" src="./images/plant/4.jfif" alt="">
-                                </div>
-                                <div class="card_button sm:pl-4 lg:pl-10 hidden  absolute">
-                                    <ul class="flex gap-2">
-                                        <li class="bg-white rounded cursor-pointer" title="Add to Cart"><div class="bi bi-cart text-black p-2 "></div></li>
-                                        <li class="bg-white rounded cursor-pointer" title="Add to Wish List"><div class="bi bi-heart text-black p-2 "></div></li>
-                                        <li class="bg-white rounded cursor-pointer" title="Compare With"><div class="bi bi-file-diff text-black p-2 "></div></li>
-                                        <li class="bg-white rounded cursor-pointer" title="Quick View"><div class="bi bi-eye-fill text-black p-2 "></div></li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cart_details px-2 py-6 h-[30%]">
-                                <h3>Name Of Products</h3>
-                                <p>$50.00</p>
-                                <div class="py-2 flex gap-4">
-                                    <div class="rounded-full cursor-pointer   w-4 h-4 bg-green-600"></div>
-                                    <div class="rounded-full cursor-pointer  w-4 h-4 bg-red-600"></div>
-                                    <div class="rounded-full cursor-pointer w-4 h-4 bg-yellow-600"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 p-4 h-[400px]">
-                        <div class="card h-full rounded-5">
-                            <div class="card_image  relative h-[70%]">
-                                <div class="img h-full">
-                                    <img class="h-full rounded-5" src="./images/plant/5.jfif" alt="">
-                                </div>
-                                <div class="card_button sm:pl-4 lg:pl-10 hidden  absolute">
-                                    <ul class="flex gap-2">
-                                        <li class="bg-white rounded cursor-pointer" title="Add to Cart"><div class="bi bi-cart text-black p-2 "></div></li>
-                                        <li class="bg-white rounded cursor-pointer" title="Add to Wish List"><div class="bi bi-heart text-black p-2 "></div></li>
-                                        <li class="bg-white rounded cursor-pointer" title="Compare With"><div class="bi bi-file-diff text-black p-2 "></div></li>
-                                        <li class="bg-white rounded cursor-pointer" title="Quick View"><div class="bi bi-eye-fill text-black p-2 "></div></li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cart_details px-2 py-6 h-[30%]">
-                                <h3>Name Of Products</h3>
-                                <p>$50.00</p>
-                                <div class="py-2 flex gap-4">
-                                    <div class="rounded-full cursor-pointer   w-4 h-4 bg-green-600"></div>
-                                    <div class="rounded-full cursor-pointer  w-4 h-4 bg-red-600"></div>
-                                    <div class="rounded-full cursor-pointer w-4 h-4 bg-yellow-600"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 p-4 h-[400px]">
-                        <div class="card h-full rounded-5">
-                            <div class="card_image  relative h-[70%]">
-                                <div class="img h-full">
-                                    <img class="h-full rounded-5" src="./images/plant/1.jpg" alt="">
-                                </div>
-                                <div class="card_button sm:pl-4 lg:pl-10 hidden  absolute">
-                                    <ul class="flex gap-2">
-                                        <li class="bg-white rounded cursor-pointer" title="Add to Cart"><div class="bi bi-cart text-black p-2 "></div></li>
-                                        <li class="bg-white rounded cursor-pointer" title="Add to Wish List"><div class="bi bi-heart text-black p-2 "></div></li>
-                                        <li class="bg-white rounded cursor-pointer" title="Compare With"><div class="bi bi-file-diff text-black p-2 "></div></li>
-                                        <li class="bg-white rounded cursor-pointer" title="Quick View"><div class="bi bi-eye-fill text-black p-2 "></div></li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cart_details px-2 py-6 h-[30%]">
-                                <h3>Name Of Products</h3>
-                                <p>$50.00</p>
-                                <div class="py-2 flex gap-4">
-                                    <div class="rounded-full cursor-pointer   w-4 h-4 bg-green-600"></div>
-                                    <div class="rounded-full cursor-pointer  w-4 h-4 bg-red-600"></div>
-                                    <div class="rounded-full cursor-pointer w-4 h-4 bg-yellow-600"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 p-4 h-[400px]">
-                        <div class="card h-full rounded-5">
-                            <div class="card_image  relative h-[70%]">
-                                <div class="img h-full">
-                                    <img class="h-full rounded-5" src="./images/plant/6.webp" alt="">
-                                </div>
-                                <div class="card_button sm:pl-4 lg:pl-10 hidden  absolute">
-                                    <ul class="flex gap-2">
-                                        <li class="bg-white rounded cursor-pointer" title="Add to Cart"><div class="bi bi-cart text-black p-2 "></div></li>
-                                        <li class="bg-white rounded cursor-pointer" title="Add to Wish List"><div class="bi bi-heart text-black p-2 "></div></li>
-                                        <li class="bg-white rounded cursor-pointer" title="Compare With"><div class="bi bi-file-diff text-black p-2 "></div></li>
-                                        <li class="bg-white rounded cursor-pointer" title="Quick View"><div class="bi bi-eye-fill text-black p-2 "></div></li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cart_details px-2 py-6 h-[30%]">
-                                <h3>Name Of Products</h3>
-                                <p>$50.00</p>
-                                <div class="py-2 flex gap-4">
-                                    <div class="rounded-full cursor-pointer   w-4 h-4 bg-green-600"></div>
-                                    <div class="rounded-full cursor-pointer  w-4 h-4 bg-red-600"></div>
-                                    <div class="rounded-full cursor-pointer w-4 h-4 bg-yellow-600"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lg:col-span-3 md:col-span-4 sm:col-span-6 col-span-12 p-4 h-[400px]">
-                        <div class="card h-full rounded-5">
-                            <div class="card_image  relative h-[70%]">
-                                <div class="img h-full">
-                                    <img class="h-full rounded-5" src="./images/plant/2.jfif" alt="">
-                                </div>
-                                <div class="card_button sm:pl-4 lg:pl-10 hidden  absolute">
-                                    <ul class="flex gap-2">
-                                        <li class="bg-white rounded cursor-pointer" title="Add to Cart"><div class="bi bi-cart text-black p-2 "></div></li>
-                                        <li class="bg-white rounded cursor-pointer" title="Add to Wish List"><div class="bi bi-heart text-black p-2 "></div></li>
-                                        <li class="bg-white rounded cursor-pointer" title="Compare With"><div class="bi bi-file-diff text-black p-2 "></div></li>
-                                        <li class="bg-white rounded cursor-pointer" title="Quick View"><div class="bi bi-eye-fill text-black p-2 "></div></li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="cart_details px-2 py-6 h-[30%]">
-                                <h3>Name Of Products</h3>
-                                <p>$50.00</p>
-                                <div class="py-2 flex gap-4">
-                                    <div class="rounded-full cursor-pointer   w-4 h-4 bg-green-600"></div>
-                                    <div class="rounded-full cursor-pointer  w-4 h-4 bg-red-600"></div>
-                                    <div class="rounded-full cursor-pointer w-4 h-4 bg-yellow-600"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    
-                </div>
+                       
 
             </div>
-
-        </div>
-
-
-
+   
 
 
     </div>
 
 
-
+    <div id="videoModal" class="vModal">
+        <div class="vModal-content w-full h-full">
+            <span class="closevModal absolute right-0 top-0">&times;</span>
+            <span class="w-full h-full">
+                <iframe class="w-full h-full iframe" src="https://www.youtube.com/embed/8xCpWBgKOXI" frameborder="0" allowfullscreen></iframe>
+            </span>
+        </div>
+    </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -487,6 +509,10 @@
             duration: 800, // Animation duration
             once: false, // Allow animations to repeat
         });
+
+        // vModal functions
+
+    
 
 
 
