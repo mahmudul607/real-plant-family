@@ -34,31 +34,24 @@ document.addEventListener("DOMContentLoaded", ()=>{
     })
 
 
-    // video modal function 
+   
+    
 
-    document.addEventListener("DOMContentLoaded", function() {
-        let vModal = document.getElementById('videoModal');
-        let vBtn = document.getElementById('vModalBtn');
-        let closeBtn = document.getElementsByClassName('closevModal')[0];
-        let iframe = document.querySelector('iframe');
-    
-        vBtn.onclick = function() {
-            vModal.style.display = 'block';
-            console.log('Open Modal');
-            iframe.src = iframe.src;
-        };
-    
-        closeBtn.onclick = function() {
-            vModal.style.display = 'none';
-            iframe.src = '';
-        };
-    
-        window.onclick = function(e) {
-            if (e.target == vModal) {
-                vModal.style.display = 'none';
-                iframe.src = '';
-            }
-        };
+
+    // change bg color for navbar after scroll
+
+    window.addEventListener('scroll', function(){
+
+        const navbar = document.querySelector('header .navbar');
+        const scrollPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const targetHeight = windowHeight * 0.5;
+
+        if(scrollPosition > targetHeight){
+            navbar.classList.add('scrolled');
+        }
+        else{
+            navbar.classList.remove('scrolled');
+        }
     });
-    
 

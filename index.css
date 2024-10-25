@@ -4,17 +4,31 @@
 
 
 header .navbar{
-  background: rgba(241, 155, 202, 0.8);
-  top: 10px;
+  background:  rgba(248, 218, 153, 0.7);
+  top: 20px;
   
   
 }
 
+header .scrolled{
+  background:rgb(250, 228, 182);
+}
+
 header {
   position: sticky !important;
-  top: -10px;
+  top: -20px;
   z-index: 1000;
   
+  
+}
+
+.title-section{
+  text-align: center;
+  font-size: xx-large;
+  text-transform: capitalize;
+  padding-top: 2rem;
+  padding-bottom: 2rem; 
+  font-family: 'Arima';
 }
 
 .main_section_carousel{
@@ -82,14 +96,16 @@ header {
 .cat_items{
 border-radius: 0;
 border: 0.2px solid transparent ;
+border-width: 5px;
 transition: border-radius 0.3s ease-in-out ;
 
 }
 
 .cat_items:hover{
   border-width: 5px;
-  border-color: green;
+  border-color: #fae4b6;
   border-radius: 50px;
+  cursor: pointer;
 
 }
 
@@ -129,37 +145,132 @@ font-family: "Arima";
 /* vidoe style  */
 
 
- .vModal{
-  display: none;
-  position: absolute;
-  z-index: 1;
-  left: 10%;
-  right: 0;
-  width: 80%;
-  height: 60%;
-  overflow: auto;
-  background-color: red;
-}
-
  
 
- .closevModal{
-  float: right;
-  font-size: 3rem;
-  font-weight: bold;
-  color: #aaaa;
+.openModalBtn{
+  background: rgba(250, 228, 182, 0.6);
 }
- .closevModal:hover, .closevModal:focus{
-  color: white;
-  text-decoration: none;
-  cursor: pointer;
+.modal-header{
+  z-index: 100 !important;
+ 
 }
+.modal-header .btn-close{
+  color: red !important;
+  background-color: white !important;
+}
+ 
+
+
+#vModalBtn{
+  width: 80px;
+  height: 80px;
+  background: rgba(240, 233, 217, 0.5);
+  border: 2px solid rgb(105, 96, 75);
+  border-radius: 50px;
+}
+
+#vModalBtn:hover{
+  background:unset !important;
+}
+
+
+/* service section  */
+
+@keyframes spin {
+  0% {
+    transform: translate(170%, 170%) rotate(-0deg) translate(50px) rotate(-0deg);
+  }
+  100% {
+    transform: translate(170%, 170%) rotate(-360deg) translate(50px) rotate(-360deg);
+  }
+}
+
+.problem:hover .icon{
+  color: rgb(169, 228, 8);
+  transition: all 0.5s;
+}
+
+
+.circle {
+	position: relative;
+  border: 5px solid #39c;
+  border-radius: 50%;
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  
+}
+
+.problem:hover .ball {
+  background: #39c;
+  border-radius: 50%;
+  position: absolute;
+  border: 2px solid rgb(169, 228, 8);
+  top: 0;
+  bottom: 0;
+  height: 20px;
+  width: 20px;
+  animation: spin 3s  linear infinite;
+  
+}
+
+
+/* summer care tips */
+.summer-care-tips{
+  position: relative;
+}
+.summer-care-tips::after{
+  content: "";
+  width: 70%;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  background-color: yellowgreen;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+
+/*  */
+.showcas-carousel-parent .owl-stage-outer, .showcas-carousel-parent .owl-stage-outer .owl-stage, .showcas-carousel-parent .owl-stage-outer .owl-stage .owl-item{
+  height: 100% !important;
+
+}
+.showcas-carousel-parent .owl-stage-outer .owl-stage .owl-item{
+  
+  overflow: hidden;
+
+  
+}
+.showcas-carousel-parent .owl-stage-outer .owl-stage .owl-item img{
+
+  transition: all 0.5s ease;
+  overflow: hidden;
+
+}
+.showcas-carousel-parent .owl-stage-outer .owl-stage .owl-item:hover img{
+  transform: scale(1.2);
+
+}
+
+
+
+
 
 
 @keyframes bottomPositionCartButton {
 
   from{
     bottom: -30px;
+  }
+  to{
+    bottom: 5px;
+  }
+  
+}
+@keyframes bgOpacity {
+
+  from{
+    bo: -30px;
   }
   to{
     bottom: 5px;
