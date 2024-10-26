@@ -1,17 +1,22 @@
+.body{
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
 .selector-for-some-widget {
   box-sizing: content-box;
 }
 
 
 header .navbar{
-  background:  rgba(248, 218, 153, 0.7);
+  background:  rgba(150, 203, 92, 0.7);
   top: 20px;
   
   
 }
 
 header .scrolled{
-  background:rgb(250, 228, 182);
+  background:rgb(150, 203, 92);
 }
 
 header {
@@ -122,6 +127,7 @@ font-family: "Arima";
  
   transition: transform 0.5s;
  
+ 
 }
 
 
@@ -186,14 +192,14 @@ font-family: "Arima";
 }
 
 .problem:hover .icon{
-  color: rgb(169, 228, 8);
+  color: rgb(150, 203, 92);
   transition: all 0.5s;
 }
 
 
 .circle {
 	position: relative;
-  border: 5px solid #39c;
+  border: 5px solid rgb(150, 203, 92);
   border-radius: 50%;
   margin: auto;
   height: 100px;
@@ -225,7 +231,7 @@ font-family: "Arima";
   height: 2px;
   position: absolute;
   left: 50%;
-  background-color: yellowgreen;
+  background-color: rgb(150, 203, 92);
   bottom: 0;
   transform: translateX(-50%);
 }
@@ -278,3 +284,14 @@ font-family: "Arima";
   
 }
 
+
+/* search modal */
+
+/* product filter style */
+
+.switch-button{
+  color: grey;
+}
+.active-switch{
+  color: black !important;
+}

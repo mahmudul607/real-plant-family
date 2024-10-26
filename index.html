@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Real Plant Family</title>
+    <link rel="icon" type="image/x-icon" href="./images/all.png">
+    <title>MH Family Plant</title>
 
     <link rel="stylesheet" href="./owlCarousel/owl.carousel.css">
     <link rel="stylesheet" href="./owlCarousel/owl.carousel.min.css">
@@ -37,13 +37,14 @@
                 <div class="nav-area-2  grow items-center   flex">
                     <div class="sm:block hidden">
                         <ul class="navbar-items flex gap-4 pl-4 ">
-                            <li class="nav-item hover:text-white cursor-pointer"><a href="./index.html">Home</a></link>
+                            <li class="nav-item hover:text-[#3399cc] cursor-pointer"><a href="/">Home</a></link>
                             </li>
-                            <li class="nav-item hover:text-white cursor-pointer"><a rel="" type=""
+                            <li class="nav-item hover:text-[#3399cc] cursor-pointer"><a rel="" type=""
                                     href="./shop.html">Shop</a> </li>
-                            <li class="nav-item hover:text-white cursor-pointer"><a href="./products.html">Products</a>
+                            
                             </li>
-                            <li class="nav-item hover:text-white cursor-pointer">About Us</li>
+                            <li class="nav-item hover:text-[#3399cc] cursor-pointer"><a rel="" type=""
+                                href="./aboutUs.html">About Us</a> </li>
                         </ul>
                     </div>
 
@@ -58,13 +59,14 @@
                             </svg>
                         </div>
                         <ul id="myDropdown" class="navbar-items dropdown_content flex gap-4 pl-4 relative ">
-                            <li class="nav-item hover:text-white cursor-pointer"><a href="./index.html">Home</a></link>
+                            <li class="nav-item hover:text-[#3399cc] cursor-pointer"><a href="/">Home</a></link>
                             </li>
-                            <li class="nav-item hover:text-white cursor-pointer"><a rel="" type=""
+                            <li class="nav-item hover:text-[#3399cc] cursor-pointer"><a rel="" type=""
                                     href="./shop.html">Shop</a> </li>
-                            <li class="nav-item hover:text-white cursor-pointer"><a href="./products.html">Products</a>
+                         
                             </li>
-                            <li class="nav-item hover:text-white cursor-pointer">About Us</li>
+                            <li class="nav-item hover:text-[#3399cc] cursor-pointer"><a rel="" type=""
+                                href="./aboutUs.html">About Us</a> </li>
                         </ul>
 
                     </div>
@@ -74,7 +76,7 @@
                 <div class="nav-area-3 lg:w-96 md:48 w-32   flex justify-end sm:pr-4">
                     <ul class="flex max-sm:gap-1  sm:gap-2 md:gap-6 lg:gap-8 ">
 
-                        <li class="hover:text-white cursor-pointer md:text-2xl"><i class="bi bi-search "></i></li>
+                        <li class="hover:text-white cursor-pointer md:text-2xl" id="openSearchModal" data-bs-toggle="modal" data-bs-target="#staticBackdropSearch"><i class="bi bi-search "></i></li>
                         <li class="hover:text-white cursor-pointer md:text-2xl"><i class="bi bi-person-fill"></i></li>
                         <li class="hover:text-white cursor-pointer md:text-2xl"><i class="bi bi-heart"></i></li>
                         <li class="hover:text-white cursor-pointer md:text-2xl"><i class="bi bi-cart-check"></i></li>
@@ -515,12 +517,13 @@
 
             <!-- service  section -->
 
-            <div class="service-section px-8 mb-16">
-                <div class="title-section">
+            <div class="service-section px-8 mb-16 overflow-x-hidden">
+                <div data-aos="fade-up" class="title-section">
                     <h1>We are solve the biggest problem in furniture</h1>
                 </div>
                 <div class="problem-category flex justify-content-between gap-4 pb-16 text-center ">
-                    <div class="problem gap-4 flex-column flex justify-content-center">
+                    <div data-aos="fade-right" data-aos-offset="50"
+                        class="problem gap-4 flex-column flex justify-content-center">
                         <div class="icon-container circle">
                             <div class="icon md:text-4xl lg:text-6xl text-xl p-2">
 
@@ -531,7 +534,7 @@
                         <h2 class="lg:text-2xl md:text-xl text-md">Free Standard Shipping</h2>
                         <p>Every single order ships for free. No minimums, no tiers, no fine print whatsoever.</p>
                     </div>
-                    <div class="problem gap-4 flex-column flex">
+                    <div data-aos="fade-up" class="problem gap-4 flex-column flex">
                         <div class="icon-container circle">
                             <div class="icon md:text-4xl lg:text-6xl text-xl p-2">
 
@@ -545,7 +548,7 @@
                         <p>Our innovative modular design is driven by the belief that furniture should fit this home,
                             and the next one.</p>
                     </div>
-                    <div class="problem gap-4 flex-column flex">
+                    <div data-aos="fade-left" data-aos-offset="50" class="problem gap-4 flex-column flex">
                         <div class="icon-container circle">
                             <div class="icon md:text-4xl lg:text-6xl text-xl p-2">
 
@@ -562,14 +565,14 @@
 
 
             <!-- shop by collection section -->
-            <div data-aos="fade-up" class="collection-section pb-44 px-6">
+            <div data-aos="fade-up" class="collection-section pb-44 px-6 w-full">
                 <div class="title-section">
                     <h1>Shop by Collection</h1>
                 </div>
                 <div class="card-group gap-2">
                     <div class="card" data-aos="fade-up">
                         <img src="./images/plant/16.jpg" class="card-img-top h-64" alt="...">
-                        <span class="absolute  top-50 right-16 text-[#39c] md:text-2xl lg:text-4xl cursor-pointer"><i
+                        <span class="absolute  top-50 right-16 text-[#96cb5c] md:text-2xl lg:text-4xl cursor-pointer"><i
                                 class="bi bi-arrow-up-right-circle-fill"></i></span>
                         <div class="card-footer ">
                             <h5 class="card-title">Card title</h5>
@@ -579,7 +582,7 @@
                     </div>
                     <div class="card" data-aos="fade-up">
                         <img src="./images/plant/3.jpg" class="card-img-top h-64" alt="...">
-                        <span class="absolute  top-50 right-16 text-[#39c] md:text-2xl lg:text-4xl cursor-pointer"><i
+                        <span class="absolute  top-50 right-16 text-[#96cb5c] md:text-2xl lg:text-4xl cursor-pointer"><i
                                 class="bi bi-arrow-up-right-circle-fill"></i></span>
                         <div class="card-footer ">
                             <h5 class="card-title">Card title</h5>
@@ -589,7 +592,7 @@
                     </div>
                     <div class="card" data-aos="fade-up">
                         <img src="./images/plant/18.jpg" class="card-img-top h-64" alt="...">
-                        <span class="absolute  top-50 right-16 text-[#39c] md:text-2xl lg:text-4xl cursor-pointer"><i
+                        <span class="absolute  top-50 right-16 text-[#96cb5c] md:text-2xl lg:text-4xl cursor-pointer"><i
                                 class="bi bi-arrow-up-right-circle-fill"></i></span>
                         <div class="card-footer ">
                             <h5 class="card-title">Card title</h5>
@@ -599,7 +602,7 @@
                     </div>
                     <div class="card" data-aos="fade-up">
                         <img src="./images/plant/13.webp" class="card-img-top h-64" alt="...">
-                        <span class="absolute  top-50 right-16 text-[#39c] md:text-2xl lg:text-4xl cursor-pointer"><i
+                        <span class="absolute  top-50 right-16 text-[#96cb5c] md:text-2xl lg:text-4xl cursor-pointer"><i
                                 class="bi bi-arrow-up-right-circle-fill"></i></span>
                         <div class="card-footer ">
                             <h5 class="card-title">Card title</h5>
@@ -615,14 +618,14 @@
 
             <!-- summer care tips -->
 
-            <div class="summer-care-tips  pb-16 px-8  ">
-                <div class="video-container  md:flex flex-md-row-reverse  text-center gap-2">
-                    <div class="video-area h-[400px] md:w-[50%] rounded-2 overflow-hidden  relative">
+            <div class="summer-care-tips  pb-16 px-8  overflow-x-hidden">
+                <div class="video-container h-[400px]  w-full md:flex flex-md-row-reverse  text-center gap-2  ">
+                    <div data-aos="fade-left" class="video-area  md:w-[50%] rounded-2   relative">
 
                         <img class="w-full h-full " src="./images/plant/3.jpg" alt="">
 
                     </div>
-                    <div class="video-details md:w-[50%] w-full pb-8">
+                    <div data-aos="fade-right" class="video-details md:w-[50%] w-full pb-8 ">
                         <div
                             class="details-section text-left lg:pt-16 lg:pl-24 md:pt-8 md:pl-8 pt-8 pl-4 flex flex-column gap-4 ">
                             <h4 data-aos="fade-up">LIFE GATHERS AROUND PLANTS</h4>
@@ -667,16 +670,16 @@
                         <img class="rounded-5 w-full h-[100%]" src="./images//plant/1.jpg" alt="">
                     </div>
                     <div class="item rounded-5 w-full h-[100%]">
-                        <img class="rounded-5 w-full h-[100%]"  src="./images//plant/11.jpg" alt="">
+                        <img class="rounded-5 w-full h-[100%]" src="./images//plant/11.jpg" alt="">
                     </div>
                     <div class="item rounded-5 w-full h-[100%]">
                         <img class="rounded-5 w-full h-[100%]" src="./images//plant/18.jpg" alt="">
                     </div>
-           
+
                 </div>
             </div>
 
-
+                
 
 
             <!-- after header carousel relative section end-->
@@ -694,7 +697,7 @@
 
 
 
-    <!-- Modal -->
+    <!-- Modal video -->
     <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog max-w-[60%] h-[60%] modal-dialog-centered">
@@ -715,6 +718,54 @@
     <!-- end modal -->
 
 
+    <!-- modal search -->
+
+    <!-- Modal -->
+    <div  class="modal fade top-0" id="staticBackdropSearch" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog max-w-full h-auto modal-fullscreen">
+            <div class="modal-content w-full">
+                <div class="modal-header w-full">
+                    <div class="d-flex w-[80%] h-[20%]" >
+                        <input class="form-control me-2" id="searchInput" type="search" placeholder="Search" aria-label="Search">
+                       
+                    </div>
+                     
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div  id="quick-nav-area" class="modal-body w-full flex gap-8">
+
+                    <div class="quick-nav w-[200px] ">
+                        <h2>Quick Find Category</h2>
+                        <ul>
+                            <li>cat-1</li>
+                            <li>cat-2</li>
+                            <li>cat-3</li>
+                            <li>cat-4</li>
+                            <li>cat-5</li>
+                        </ul>
+                    </div>
+                    <div class="product-initial w-full">
+                        <div class="some-inspiration">
+                            <h3>Some Inspiration</h3>
+                        </div>
+                        <div class="grid grid-cols-6">
+                            <div class="col">item-1</div>
+                            <div class="col">item-2</div>
+                            <div class="col">item-3</div>
+                            <div class="col">item-4</div>
+                            <div class="col">item-5</div>
+                            <div class="col">item-6</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -729,56 +780,7 @@
 
     <script src="./main.js"></script>
 
-    <script>
-
-
-
-
-$(document).ready(function() {
-  // Initialize header carousel (show 1 slide)
-  $('.header-carousel').owlCarousel({
-    items: 1,
-    loop: true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause: true,
-    dots: true,
-    nav: true
-  });
-
-  // Initialize home carousel (show 4 slides on large screens)
-  $('.showcas-carousel').owlCarousel({
-    loop: true,
-    margin: 10,
-    responsive: {
-      0: {
-        items: 1 // 1 item for small screens
-      },
-      600: {
-        items: 2 // 2 items for medium screens
-      },
-      1000: {
-        items: 4 // 4 items for large screens
-      }
-    },
-    dots: true,
-    nav: true
-  });
-});
-
-        AOS.init({
-            duration: 800, // Animation duration
-            once: false, // Allow animations to repeat
-        });
-
-        // vModal functions
-
-
-
-
-
-
-    </script>
+  
 
 </body>
 
